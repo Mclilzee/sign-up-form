@@ -1,0 +1,70 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(./Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #222222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0 10%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-background {
+  padding-top: 10%;
+  background-image: url(./jorgen-hendriksen-mvEQK9PzKQY-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.164);
+  font-family: norse-bold;
+  color: white;
+  padding: 20px 0;
+  font-size: min(3rem, 4vw);
+}
+
+.logo-icon {
+  max-width: 15%;
+}
+
+.form-container {
+  max-width: 45vw;
+  background-color: #f3f3f3;
+  padding: 15vh 0;
+  font-size: min(20px, 2vw);
+}
+
+.instructions,
+.form-card {
+  margin-bottom: 5%;
+  padding: min(2vw, 3rem);
+}
+
+.form-card {
+  height: 30vh;
+  background-color: white;
+}
