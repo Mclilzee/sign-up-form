@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <title>Sign up form</title>
   </head>
   <body>
+    <div class="welcome-message-container hidden">
+      <div class="welcome-message-card">
+        <img
+          class="welcome-message-icon"
+          src="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg"
+          alt="odin icon"
+        />
+        <h2 class="welcome-message">Welcome Aboard </h2>
+        <form action="https://www.theodinproject.com" style="display: inline">
+          <button class="welcome-message-button">Start learning today!</button>
+        </form>
+      </div>
+    </div>
     <div class="container">
       <div class="logo-background">
         <div class="logo">
@@ -30,11 +44,11 @@
           <div class="input-pair">
             <div class="input">
               <label for="first-name">FIRST NAME</label>
-              <input type="text" id="first-name" required />
+              <input type="text" id="first-name" name="firstName" required />
             </div>
             <div class="input">
               <label for="last-name">LAST NAME</label>
-              <input type="text" id="last-name" required />
+              <input type="text" id="last-name" name="lastName" required />
             </div>
           </div>
           <div class="input-pair">
@@ -51,19 +65,24 @@
             <div class="input">
               <label for="password">PASSWORD</label>
               <input type="password" id="password" required name="password" />
+              <label class="password-mismatch"></label>
             </div>
             <div class="input">
               <label for="confirm-password">CONFIRM PASSWORD</label>
               <input
                 type="password"
                 id="confirm-password"
-                name="confirm-password"
+                name="confirmPassword"
                 required
               />
             </div>
           </div>
         </div>
-        <button>Create Account</button>
+        <button class="submit-button" type="submit">Create Account</button>
+        <h5 class="log-in-message">
+          Already have an account?
+          <a href="https://www.theodinproject.com/">Log in</a>
+        </h5>
       </form>
     </div>
   </body>
